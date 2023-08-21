@@ -22,7 +22,7 @@ jobs:
 
       - name: Create Releases
         run: |
-          ORGANIZATION="your-organization"
+          ORGANIZATION="m3rryqold"
           for repo in $TARGET_REPOSITORIES; do
             echo "Creating release for $repo"
             gh release create "$ORGANIZATION/$repo" --title "Release for $repo" --notes "Release notes for $repo"
